@@ -82,7 +82,7 @@ const Layout = ({ title, description, children }) => {
         <meta property='og:url' content='/' />
 
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:title' content='CRIMX' />
+        <meta name='twitter:title' content='CHENHUOJUN' />
         <meta name='twitter:creator' content='@straybugs' />
       </Helmet>
       <div>{children}</div>
