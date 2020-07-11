@@ -35,6 +35,14 @@ const Layout = ({ title, description, children }) => {
     <div>
       <Helmet>
         <html lang='zh-CN' />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172438954-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-172438954-1');
+        </script>
         <title>{title || siteMetadata.title}</title>
         <meta
           name='description'
