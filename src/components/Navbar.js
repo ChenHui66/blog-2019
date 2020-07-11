@@ -8,7 +8,7 @@ export const Navbar = React.memo(() => {
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='container'>
         <div className='navbar-brand'>
-          <a className='navbar-item' href='https://www.crimx.com' title='CRIMX'>
+          <a className='navbar-item' href='https://chenhuojun.com' title='CRIMX'>
             <img
               src={withPrefix('/img/favicon/favicon-96x96.png')}
               width='28'
@@ -39,13 +39,6 @@ export const Navbar = React.memo(() => {
             <Link className='navbar-item' to='/archives'>
               Archives
             </Link>
-            <a
-              className='navbar-item'
-              href='https://www.crimx.com/projects/'
-              target='_blank'
-            >
-              Projects
-            </a>
             <Link className='navbar-item' to='/about'>
               About
             </Link>
@@ -54,7 +47,7 @@ export const Navbar = React.memo(() => {
             <div className='is-flex is-justified-center'>
               <a
                 className='navbar-item is-inline-flex-mobile'
-                href='https://github.com/crimx/blog-2019'
+                href='https://github.com/ChenHui66/blog-2019'
                 target='_blank'
                 title='Source code of this blog'
                 rel='nofollow noreferrer noopener'

@@ -9,10 +9,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://blog.crimx.com',
-    title: 'CRIMX BLOG',
+    siteUrl: 'https://chenhuojun.com',
+    title: 'CHENHUOJUN BLOG',
     description:
-      'CRIMX 的博客，主要记录 Web 前端相关的一些内容，偶尔涉及其它方面。',
+      'CHENHUOJUN 的博客，主要记录 Web 前端相关的一些内容，偶尔涉及其它方面。',
     social: require('./social-media.json')
   },
   plugins: [
@@ -127,7 +127,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'CRIMX BLOG RSS Feed'
+            title: 'CHENHUOJUN BLOG RSS Feed'
           }
         ]
       }

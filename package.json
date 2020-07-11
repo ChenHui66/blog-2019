@@ -1,8 +1,8 @@
 {
-  "name": "blog.crimx.com",
-  "description": "CRIMX's frontend blog for 2019",
-  "homepage": "https://blog.crimx.com",
-  "author": "CRIMX",
+  "name": "chenhuojun.com",
+  "description": "CHENHUOJUN's frontend blog for 2019",
+  "homepage": "https://chenhuojun.com",
+  "author": "CHENHUOJUN",
   "version": "0.0.1",
   "private": true,
   "dependencies": {

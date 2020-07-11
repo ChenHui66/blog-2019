@@ -28,41 +28,18 @@ svg.social {
 <svg class="social">
   <use xlink:href="/img/symbol-defs.svg#icon-mail-circle" />
 </svg>
-[邮件](mailto:%73%74%72%61%79%62%75%67%73%40%67%6D%61%69%6C%2E%63%6F%6D) 联系作者，
+[邮件](mailto:1131056236@qq.com) 联系作者，
 作者的开源项目都托管在 
 <svg class="social">
   <use xlink:href="/img/symbol-defs.svg#icon-github-circle" />
 </svg>
-[Github](https://github.com/crimx/) 上。
-
-他有时也会在
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-segmentfault-circle" />
-</svg>
-[Segmentfault](https://segmentfault.com/u/crimx) 上帮助网友解决编程问题。
+[Github](https://github.com/ChenHui66/) 上。
 偶尔会在
 <svg class="social">
   <use xlink:href="/img/symbol-defs.svg#icon-codepen-circle" />
 </svg>
-[CodePen](https://codepen.io/straybugs/) 上涂涂鸦，
-在
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-netease-music-circle" />
-</svg>
-[云村](https://music.163.com/user/home?id=44711994) 读读英文诗，
-上
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-zhihu-circle" />
-</svg>
-[知乎](https://www.zhihu.com/people/straybugs) 安利自己的[沙拉查词](https://github.com/crimx/ext-saladict)。
-
-
-在
+[CodePen](https://codepen.io/chenhui66/) 上涂涂鸦，在
 <svg class="social">
   <use xlink:href="/img/symbol-defs.svg#icon-twitter-circle" />
 </svg>
-[Twitter](https://twitter.com/straybugs/) 刷刷技术八卦，
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-weibo-circle" />
-</svg>
-[微博](https://www.weibo.com/bananajaward) 刷刷娱乐八卦。
+[Twitter](https://twitter.com/Long31003614) 刷刷技术八卦。
