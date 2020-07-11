@@ -8,7 +8,7 @@ export const Navbar = React.memo(() => {
     <nav className='navbar' role='navigation' aria-label='main navigation'>
       <div className='container'>
         <div className='navbar-brand'>
-          <a className='navbar-item' href='https://chenhuojun.com' title='CHENHUOJUN'>
+          <a className='navbar-item' href='https://www.chenhuojun.com' title='CHENHUOJUN'>
             <img
               src={withPrefix('/img/favicon/favicon-96x96.png')}
               width='28'
