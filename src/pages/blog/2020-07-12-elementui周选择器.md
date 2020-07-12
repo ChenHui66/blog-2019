@@ -7,7 +7,9 @@ description: >-
   elementui周选择器获取当前选中周，返回的数据是一个Mon May 04 2020 00:00:00 GMT+0800
   (中国标准时间)。。。这样的，我们需要自己处理一个格式问题。
 quote:
-  content: ''
+  content: >-
+    Only those who have the patience to do simple things perfectly ever acquire
+    the skill to do difficult things easily.
   author: ''
   source: ''
 tags:
