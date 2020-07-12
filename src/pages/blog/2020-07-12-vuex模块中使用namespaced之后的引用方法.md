@@ -5,7 +5,7 @@ date: 2020-07-12T03:50:39.689Z
 title: vuex模块中使用namespaced之后的引用方法
 description: 利用createNamespacedHelpers函数快速获取vuex模块的状态。
 quote:
-  content: ''
+  content: You have to believe in yourself. That's the secret of success.
   author: ''
   source: ''
 tags:
