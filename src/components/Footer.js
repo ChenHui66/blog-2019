@@ -113,7 +113,7 @@ const Footer = React.memo(() => {
         .
       </div>
       <div className='copyright'>
-        © COPYRIGHT 2019 · Made With{' '}
+        © COPYRIGHT 2020 · Made With{' '}
         <svg
           viewBox='0 0 32 32'
           width='1em'
