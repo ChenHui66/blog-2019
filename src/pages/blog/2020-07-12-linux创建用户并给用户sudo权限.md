@@ -15,11 +15,13 @@ tags:
 我在这里将按如下步骤来详细的描述创建用户的过程。以用户名test为例：
 
 1. 创建一个名为test的用户，且同时给他在home目录下面创建了文件夹
+
 ```
 useradd -d /home/test -m test
 ```
 
 2. 给test用户设置密码
+
 ```
 passwd test
 ```
@@ -38,6 +40,7 @@ usermod -a -G adm test
 ```
 
 5. 检查test所在的用户组
+
 ```
 groups test
 ```
