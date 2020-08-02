@@ -7,7 +7,7 @@ description: 在debian下开启dsl帐号密码拨号连接（需要安装pppoe�
 quote:
   content: 'I don''t want to be your entire world, just the best thing in it. '
   author: ''
-  source: 'https://blog.csdn.net/yucicheung/article/details/79065454'
+  source: ''
 tags:
   - linux
   - pppoe
@@ -15,11 +15,15 @@ tags:
   - dsl
 ---
 解决步骤：
+
 1. 找到pppoeconf网络配置文件,先查看
+
 ```
 sudo cat /etc/ppp/peers/dsl-provider
 ```
+
 2. 修改配置文件，sudo vim /etc/ppp/peers/dsl-provider
+
 ```
 # Configuration file for PPP, using PPP over Ethernet 
 # to connect to a DSL provider.
@@ -106,14 +110,17 @@ nic-enp0s25
 # 新增配置
 usepeerdns
 user "2D"
-
 ```
+
 3. 执行命令重新做拨号连接
+
 ```
 sudo poff -a
 pon dsl-provider
 ```
+
 4.测试网速
+
 ```
 $ ping www.baidu.com
 PING www.a.shifen.com (220.181.112.244) 56(84) bytes of data.
@@ -128,3 +135,5 @@ PING www.a.shifen.com (220.181.112.244) 56(84) bytes of data.
 64 bytes from 220.181.112.244 (220.181.112.244): icmp_seq=9 ttl=53 time=17.8 ms
 64 bytes from 220.181.112.244 (220.181.112.244): icmp_seq=10 ttl=53 time=17.8 ms
 ```
+
+[点击查看原文](https://blog.csdn.net/yucicheung/article/details/79065454)
