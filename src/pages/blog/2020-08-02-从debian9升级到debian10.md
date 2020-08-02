@@ -11,9 +11,10 @@ quote:
     Life doesn't just happen to you; you receive everything in your life based
     on what you've given.
   author: ''
-  source: 'http://forums.debian.net/viewtopic.php?f=6&t=142634'
+  source: ''
 tags:
   - linux
 ---
-solution：
-I found the commented text #WaylandEnable=false in /etc/gdm3/daemon.conf which I uncommented and reboot my machine.After reboot,I can access Synaptic Package Manager without errors.
+solution： I found the commented text #WaylandEnable=false in /etc/gdm3/daemon.conf which I uncommented and reboot my machine.After reboot,I can access Synaptic Package Manager without errors.
+
+[原文连接](http://forums.debian.net/viewtopic.php?f=6&t=142634)
