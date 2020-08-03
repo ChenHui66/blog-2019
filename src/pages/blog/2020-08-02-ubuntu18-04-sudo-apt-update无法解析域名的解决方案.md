@@ -12,7 +12,7 @@ tags:
   - apt update
   - 无法解析域名
 ---
-## 查看NS Server
+## 查看DNS Server
 
 我们可以看到，大概我们无法对像
 "cn.archive.ubuntu.com"、"packages.microsoft.com"
