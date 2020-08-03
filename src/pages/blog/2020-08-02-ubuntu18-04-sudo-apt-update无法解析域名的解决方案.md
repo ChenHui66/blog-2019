@@ -14,7 +14,8 @@ tags:
 ---
 ## 查看NS Server
 
-我们可以看到，大概我们无法对像"cn.archive.ubuntu.com"、"packages.microsoft.com"
+我们可以看到，大概我们无法对像
+"cn.archive.ubuntu.com"、"packages.microsoft.com"
 之类的网站进行域名解析。出现这一问题主要是因为DNS解析有误，或者是DNS未配置。我们可以查看一下DNS Server：
 
 * cat /etc/resolv.conf
