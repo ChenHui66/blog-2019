@@ -21,6 +21,7 @@ tags:
 sudo dpkg -i  mysql-workbench-community_8.0.21-1ubuntu18.04_amd64.deb 
 
 ```
+
 * 会提示有依赖问题
 ```
 正在选中未选择的软件包 mysql-workbench-community。
@@ -38,10 +39,9 @@ dpkg: 处理软件包 mysql-workbench-community (--install)时出错：
 正在处理用于 mime-support (3.62) 的触发器 ...
 正在处理用于 hicolor-icon-theme (0.17-2) 的触发器 ...
 正在处理用于 shared-mime-info (1.10-1) 的触发器 ...
-在处理时有错误发生：
- mysql-workbench-community
-
+在处理时有错误发生：mysql-workbench-community
 ```
+
 * 按照提示修复依赖关系即可
 
 
