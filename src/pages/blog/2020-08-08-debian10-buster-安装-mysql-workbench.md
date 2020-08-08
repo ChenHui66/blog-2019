@@ -15,14 +15,17 @@ tags:
   - MySQL workbench
 ---
 我们仍然可以下载.deb包的方式，安装workbench。
+
 * 去 https://dev.mysql.com/downloads/workbench/ 选择ubuntu(18.xx)
+
 * 去到文件目录后安装
+
 ```
 sudo dpkg -i  mysql-workbench-community_8.0.21-1ubuntu18.04_amd64.deb 
-
 ```
 
 * 会提示有依赖问题
+
 ```
 正在选中未选择的软件包 mysql-workbench-community。
 (正在读取数据库 ... 系统当前共安装有 181871 个文件和目录。)
