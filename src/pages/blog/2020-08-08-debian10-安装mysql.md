@@ -13,16 +13,13 @@ tags:
   - MySQL
 ---
 最佳方式，在 *[这里下载](https://dev.mysql.com/downloads/)* MySQL Community Server 然后选择Debian时会出现建议使用 Mysql APT Repository 的安装方式。所以我们下载Mysql APT Repository，然后更新 APT Repository ，之后使用 apt-get 自动安装。这是最标准的安装方式。下面是具体步骤：
-
 * 下载安装 Mysql APT Repository,然后执行下面语句：
 ```
 sudo apt-get install ./Downloads/mysql-apt-config_0.8.14-1_all.deb
 ```
 > 会弹出一个界面，全部默认安装直接选择ok就可以了。
-
 * sudo apt-get update 可以看见已经有了mysql
 * 现在安装 mysql-server
-
 ```
   sudo  apt-get install mysql-server
 ```
