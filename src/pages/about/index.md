@@ -12,34 +12,3 @@ title: 关于本博客及作者
 样式基于一个现代 CSS 框架 [Bulma](https://bulma.io/)， Sass 模块的设计借鉴了 [ITCSS](https://itcss.io/) 思想。
 
 LOGO 图标使用 illustrator 设计，社交图案采用 [NViconsLib 2](https://github.com/nullice/NViconsLib_Silhouette) ，使用 [Boxy SVG](https://boxy-svg.com/) 手工编辑，利用 [IcoMoon](https://icomoon.io/) 合并以及 [SVGOMG](https://jakearchibald.github.io/svgomg/) 压缩。
-
-# 视奸作者
-
-<style>
-svg.social {
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: 2px;
-}
-</style>
-
-可通过
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-mail-circle" />
-</svg>
-[邮件](mailto:1131056236@qq.com) 联系作者，
-作者的开源项目都托管在 
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-github-circle" />
-</svg>
-[Github](https://github.com/ChenHui66/) 上。
-偶尔会在
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-codepen-circle" />
-</svg>
-[CodePen](https://codepen.io/chenhui66/) 上涂涂鸦，在
-<svg class="social">
-  <use xlink:href="/img/symbol-defs.svg#icon-twitter-circle" />
-</svg>
-[Twitter](https://twitter.com/Long31003614) 刷刷技术八卦。
