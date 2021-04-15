@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: false
+draft: true
 date: 2019-09-22T07:37:53.903Z
 title: 真·复用组件 - React hooks 结合 RxJS 封装异步逻辑
 description: 本文聊聊 React hooks 如何改变旧有的开发思路，以及如何利用 hooks 结合 RxJS 将异步逻辑封装到组件中，从而轻松复用功能更复杂的组件。
@@ -41,7 +41,7 @@ function useFriendStatus(friendID) {
 }
 ```
 
-这使到逻辑非常容易被复用和测试，所以正如 Dan Abramov 也[建议](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)不必再教条式地对组件做旧有的区分。有了 hooks 我们可以大胆地复用功能更丰富的组件。
+这使到逻辑非常容易被复用和测试，所以正如 Dan Abramov 也建议不必再教条式地对组件做旧有的区分。有了 hooks 我们可以大胆地复用功能更丰富的组件。
 
 ## Hooks 与异步逻辑
 
@@ -80,7 +80,7 @@ function useAPI(keyword) {
 
 异步处理是存在已久的问题，业内早已有许多成熟的解决方案，RxJS 便是其中之一。但如果你没有接触过 RxJS 或者是新手，在搜集资料的时候可能会发现一种两极分化的情况：一部分人在惊叹赞美，一部分人在极力劝退。
 
-这是因为响应式编程用了一种常理以外的角度观察世界，也是笔者在[《理解 RxJS 》](https://blog.crimx.com/2018/02/16/understanding-rxjs/)中提到的，一种上帝的四维视野：逻辑不再存在于时间之中，而是在时间之外。我们不需要维护什么中间状态，每一个时间点上的状态我们都可以直接得到。
+这是因为响应式编程用了一种常理以外的角度观察世界，一种上帝的四维视野：逻辑不再存在于时间之中，而是在时间之外。我们不需要维护什么中间状态，每一个时间点上的状态我们都可以直接得到。
 
 当然代码还是在我们的四维世界里执行的。RxJS 有点像电子游戏，只会渲染你需要的部分。比如我们告诉 RxJS 需要时间点 1 和 4 的状态，那么到时间点 4 的时候，我们就有了 1 和 4 的状态，不需要的状态就被丢弃了，但在我们看来，它们都还在，就像游戏中我们看不见的其它场景。
 
@@ -100,9 +100,7 @@ function useAPI(keyword) {
 
 [rxjs-hooks](https://github.com/LeetCode-OpenSource/rxjs-hooks) 提供了两个 API 转换 Observable，可以与 React 的 props, state 和事件交互。在使用过程中发现两个 API 设计得过于复杂，不仅使用起来不方便，由于 hooks 不能可选且顺序必须固定的特性，复杂的接口代表了一些没用到的资源会存在空转状态。
 
-最后因为一个无法解决的 [issue](https://github.com/LeetCode-OpenSource/rxjs-hooks/issues/60) 笔者不得不弃用而重新设计一个轮子 [observable-hooks](https://github.com/crimx/observable-hooks)。
-
-![observable-hooks](https://github.com/crimx/observable-hooks/raw/master/observable-hooks.png?raw=true)
+一个新的轮子 [observable-hooks](https://github.com/crimx/observable-hooks)。
 
 这个超小的库是一个全方位的解决方案，通过简化每个 API 的职责解决了空转的问题并提高了性能。React 与 RxJS 交接的地方都交给 hooks 处理，这保持了 Observable 的纯净性，允许逻辑像 Epic 一样分离测试，所以如果项目本身就用了 redux-observable 的话会非常方便。
 
@@ -153,7 +151,3 @@ Pomodoro Timer Example
 Typeahead Example
 
 <iframe src="https://codesandbox.io/embed/github/crimx/observable-hooks/tree/master/examples/typeahead?autoresize=1&fontsize=14&hidenavigation=1&view=preview" title="typeahead" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
-## 最后
-
-现在 [observable-hooks](https://github.com/crimx/observable-hooks) 已经非常稳定，文档测试齐全，在[「沙拉查词 7」](https://saladict.crimx.com/)中已经大量使用实现复杂的组件动效，效果非常不错。如果你像我一样喜欢 React 和 RxJS 的话强烈建议试一试！
