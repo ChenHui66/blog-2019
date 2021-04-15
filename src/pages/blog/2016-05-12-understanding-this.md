@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2020-05-13T10:34:00.000Z
 title: JavaScript this 的六道坎
 description: 鉴于this风骚的运作方式，对this的理解是永不过时的话题，本文试图通过将其大卸六块来钉住这个磨人的妖精。
