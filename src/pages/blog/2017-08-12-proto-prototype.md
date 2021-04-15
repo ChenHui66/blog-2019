@@ -1,19 +1,20 @@
 ---
+layout: blog-post
+draft: true
+date: 2020-11-18T14:57:00.000Z
 title: prototype 与 __proto__ 的爱恨情仇
-tags:
-  - Recommended
-  - Understanding JavaScript
-  - 闲读规范
+description: 先理解两者的一个本质区别，prototype 是函数独有的，是人为设定的；__proto__ 是所有对象都有的，是继承的。
 quote:
   content: 'If you are truly innovating, you don''t have a prototype you can refer to.'
   author: Jonathan Ive
   source: ''
-date: 2017-08-12T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Recommended
+  - Understanding JavaScript
+  - 闲读规范
 ---
 
-经历了上次的[《JavaScript This 的六道坎》](/2016/05/12/understanding-this/) 发现编故事有点上瘾，而且记忆效果也不错哈哈，今天继续唠叨一下 prototype 与 `__proto__` 的爱恨情仇。
+今天唠叨一下 prototype 与 `__proto__` 的爱恨情仇。
 
 先理解两者的一个本质区别，`prototype` 是函数独有的，是人为设定的；`__proto__` 是所有对象都有的，是继承的。
 
