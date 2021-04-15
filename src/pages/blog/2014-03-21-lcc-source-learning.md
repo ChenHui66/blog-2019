@@ -1,16 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2020-09-12T12:00:00.000Z
 title: lcc内存对齐代码
-tags:
-  - lcc
-  - 编译器
-  - 内存对齐
+description: 看看源码，体验简洁之美。
 quote:
   content: 'A ship is safe in harbor, but that''s not what ships are for.'
   author: Willam G.T. Shedd
   source: ''
-date: 2014-03-21T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - lcc
+  - 编译器
+  - 内存对齐
 ---
 
 今天看lcc源码内存对齐时看到一个`roundup(x,n)`宏
