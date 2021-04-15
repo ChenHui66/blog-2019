@@ -1,17 +1,18 @@
 ---
+layout: blog-post
+draft: true
+date: 2020-03-18T10:43:00.000Z
 title: JavaScript 有必要缓存 for 循环中的 Array.length 吗？
+description: 先上笔者得到的结论：缓存 Array.lengh 对优化影响不大，甚至会减慢。
+quote:
+  content: '"TL;DR: No"'
+  author: ''
+  source: ''
 tags:
   - Recommended
   - Understanding JavaScript
   - JavaScript
   - Array
-quote:
-  content: '"TL;DR: No"'
-  author: ''
-  source: ''
-date: 2015-04-21T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 ## 问题
@@ -58,8 +59,6 @@ accepted 的答案是说缓存会起到加速的结果，给出了 [jsPerf](http
 从另一篇文章 [Shoud I have to cache my array’s length?](http://blogs.msdn.com/b/eternalcoding/archive/2015/01/07/javascript-shoud-i-have-to-cache-my-array-s-length.aspx) 的测试结果也可以看出缓存差别不大。
 
 ![array-caching-performance-1][array-caching-performance-1]
-
-还有这篇 [JavaScript's .length Property is a Stored Value](http://www.erichynds.com/blog/javascript-length-property-is-a-stored-value)
 
 ![array-caching-performance-2][array-caching-performance-2]
 
