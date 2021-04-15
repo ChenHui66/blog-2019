@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: false
+draft: true
 date: 2019-09-30T16:00:33.832Z
 title: 配置 SplitChunksPlugin 减少 Webpack 打包体积
 description: 本文聊聊如何根据项目对 SplitChunksPlugin 进行细调从而减少 Webpack 打包体积。
@@ -60,7 +60,7 @@ module.exports = {
 
 ## 沙拉查词的优化
 
-首先这是沙拉查词优化前的样子，使用了默认的 `optimization` 配置，打包后 `5.63MB`（包含一个 PDF 浏览器）。
+这是一个项目优化前的样子，使用了默认的 `optimization` 配置，打包后 `5.63MB`（包含一个 PDF 浏览器）。
 
 ![split-chunks-plugin-1](/img/split-chunks-plugin-1.png)
 
@@ -68,7 +68,7 @@ module.exports = {
 
 因为只有三个地方用到，我们不希望其它入口加载时也引入这个块，所以要声明这次分割影响到的块，`cacheGroups` 中提供了 `test` 来匹配。
 
-同时因为这三个地方都是沙拉查词中独立的页面，一般需要用户手动访问才会加载，故这里索性将 `node_modules` 中三者公共的模块都切出来。
+同时因为这三个地方都是独立的页面，一般需要用户手动访问才会加载，故这里索性将 `node_modules` 中三者公共的模块都切出来。
 
 ```javascript
 neutrino.config
@@ -93,7 +93,7 @@ neutrino.config
 
 ![split-chunks-plugin-2](/img/split-chunks-plugin-2.png)
 
-接下来可以看到还有几个大块，这个主要来自于沙拉查词的查词面板，包括 React 系的模块以及各个词典的模块。它们有一个特点是必然在一起出现，所以我们给它们割一个块。
+接下来可以看到还有几个大块，包括 React 系的模块以及各个词典的模块。它们有一个特点是必然在一起出现，所以我们给它们割一个块。
 
 ```javascript
 neutrino.config
