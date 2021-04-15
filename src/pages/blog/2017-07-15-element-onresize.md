@@ -1,26 +1,28 @@
 ---
+layout: blog-post
+draft: true
+date: 2021-02-15T14:07:00.000Z
 title: 巧妙监测元素尺寸变化
+description: >-
+  这个方法的主要思想是在被监测元素里包裹一个跟元素位置大小相同的隐藏块。隐藏块可以滚动，并有一个远远大于它的子元素。当被监测元素尺寸变化时期望能触发隐藏块的滚动事件。
+quote:
+  content: 'Whatever story you want to tell, tell it at the right size.'
+  author: Richard Linklater
+  source: ''
 tags:
   - Recommended
   - Resize
   - 闲读源码
   - 闲读规范
-quote:
-  content: 'Whatever story you want to tell, tell it at the right size.'
-  author: Richard Linklater
-  source: ''
-date: 2017-07-15T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 在往下读之前不妨先想一下，你会怎么实现？如何知道元素的尺寸发生变化了？
 
 相信很多人第一反应是 resize 事件，但这个只是 document view 变化才会触发。
 
-然后就是轮询，反复查询值变化了没有。开销不是一般的大，但像这样的库（比如这个[七年前的](https://github.com/cowboy/jquery-resize)）现在还有人用。
+然后就是轮询，反复查询值变化了没有。开销不是一般的大。
 
-最后便是[这个](https://github.com/marcj/css-element-queries)，号称 event based 无性能问题，便去观摩了一番源码。代码本身没什么惊喜，所以本文不会像[之前](/tags/%E9%97%B2%E8%AF%BB%E6%BA%90%E7%A0%81/)一样逐行逐块地分析，而是着重原理，对应[这部分](https://github.com/marcj/css-element-queries/blob/master/src/ResizeSensor.js#L100)的源码。
+最后便是[这个](https://github.com/marcj/css-element-queries)，号称 event based 无性能问题，便去观摩了一番源码。而是着重原理，对应[这部分](https://github.com/marcj/css-element-queries/blob/master/src/ResizeSensor.js#L100)的源码。
 
 ## 整体思路
 
@@ -36,7 +38,7 @@ description: ''
 
 有问题当然要去请教规范老师。
 
-第一步我们需要知道什么时候才会发生滚动，首先一个题外话，overflow 为 hidden 也是可以滚动的，[另外一篇](/2016/04/18/document-scrollingelement-polyfill/)分析里也遇到过。
+第一步我们需要知道什么时候才会发生滚动，首先一个题外话，overflow 为 hidden 也是可以滚动的。
 
 在[这里](https://www.w3.org/TR/cssom-view-1/#scrolling-events)提到滚动事件发生的时机，但说得有点笼统
 
