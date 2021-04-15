@@ -1,22 +1,25 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-12-13T14:59:00.000Z
 title: React Native 搭配 MobX 使用心得
+description: >-
+  MobX 是一款十分优秀的状态管理库，不但书写简洁还非常高效。当然这是我在使用之后才体会到的，当初试水上车的主要原因是响应式，考虑到可能会更符合 Vue
+  过来的思考方式。然而其实两者除了响应式以外并没有什么相似之处。
+quote:
+  content: The mob is the mother of tyrants.
+  author: Diogenes
+  source: ''
 tags:
   - React
   - React Native
   - JavaScript
   - MobX
-quote:
-  content: The mob is the mother of tyrants.
-  author: Diogenes
-  source: ''
-date: 2017-11-13T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 MobX 是一款十分优秀的状态管理库，不但书写简洁还非常高效。当然这是我在使用之后才体会到的，当初试水上车的主要原因是响应式，考虑到可能会更符合 Vue 过来的思考方式。然而其实两者除了响应式以外并没有什么相似之处:joy:。
 
-在使用过程中走了不少弯路，一部分是因为当时扫两眼文档就动手，对 MobX 机制理解得不够；其它原因是 MobX 终究只是一个库，会受限于 React 机制，以及与其它非 MobX 管理组件的兼容问题。当中很多情况在文档已经给出了说明（[这里](https://mobx.js.org/best/react.html)和[这里](https://mobx.js.org/best/react-performance.html)），我根据自己遇到的再做一番总结。
+在使用过程中走了不少弯路，一部分是因为当时扫两眼文档就动手，对 MobX 机制理解得不够；其它原因是 MobX 终究只是一个库，会受限于 React 机制，以及与其它非 MobX 管理组件的兼容问题。当中很多情况在文档已经给出了说明，我根据自己遇到的再做一番总结。
 
 ## 与非响应式组件兼容问题
 
