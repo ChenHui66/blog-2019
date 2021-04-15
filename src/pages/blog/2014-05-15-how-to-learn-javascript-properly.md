@@ -1,19 +1,20 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-08-15T11:00:00.000Z
 title: 如何正确学习 JavaScript
-tags:
-  - Translation
-  - Understanding JavaScript
-  - 学习路线
-  - Recommended
+description: 总结如何学习JavaScript，一些建议和学习资源，进阶路线。
 quote:
   content: >-
     No one saves us but ourselves. No one can and no one may. We ourselves must
     walk the path.
   author: Buddha
   source: ''
-date: 2014-05-15T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Translation
+  - Understanding JavaScript
+  - 学习路线
+  - Recommended
 ---
 
 正确学习 JavaScript（写给非 JavaScript 程序员和编程新手）
@@ -240,11 +241,9 @@ description: ''
 
 2. [中高级JavaScript进阶](http://javascriptissexy.com/learn-intermediate-and-advanced-javascript/)
 
-3. [不侧漏精通Node.js](https://blog.crimx.com/2014/05/22/learn-node-js-completely-and-with-confidence)
+3. Meteor.js入门（即将出炉）
 
-4. Meteor.js入门（即将出炉）
-
-4. 三个最好的JavaScript前端框架（即将出炉）
+4. 三个最好的JavaScript前端框架
 
 ## 一些鼓励的话
 
