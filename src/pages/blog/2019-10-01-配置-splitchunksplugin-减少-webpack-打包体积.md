@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-09-30T16:00:33.832Z
 title: 配置 SplitChunksPlugin 减少 Webpack 打包体积
 description: 本文聊聊如何根据项目对 SplitChunksPlugin 进行细调从而减少 Webpack 打包体积。
