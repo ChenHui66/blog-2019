@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2018-06-22T12:00:00.000Z
 title: 选中鼠标附近的文字
 description: 选中鼠标附近的文字摸索记录。
