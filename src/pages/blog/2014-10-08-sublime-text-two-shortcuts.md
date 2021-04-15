@@ -1,15 +1,16 @@
 ---
+layout: blog-post
+draft: true
+date: 2017-10-31T16:28:00.000Z
 title: Sublime Text 2 快捷键整理
-tags:
-  - Sublime Text 2
-  - Tips
+description: 基本涵盖绝大部分情况了，鼠标跳跃多选可以利用标签代替，或者用回鼠标（毕竟一般使用频率不高）。
 quote:
   content: Short cuts make long delays.
   author: J.R.R. Tolkien
   source: ''
-date: 2014-10-08T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Sublime Text 2
+  - Tips
 ---
 
 基本涵盖绝大部分情况了，鼠标跳跃多选可以利用标签代替，或者用回鼠标（毕竟一般使用频率不高）。
