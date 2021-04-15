@@ -1,17 +1,18 @@
 ---
+layout: blog-post
+draft: true
+date: 2020-08-18T15:57:00.000Z
 title: 检测 DOM 结点插入
-tags:
-  - 闲读源码
+description: 代码很短，就是维护了一个事件队列。核心在 onFn 和 offFn 上。后者同理，便主要看 onFn 的实现。
 quote:
   content: Doesn't expecting the unexpected make the unexpected expected?
   author: Bob Dylan
   source: ''
-date: 2017-09-20T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - 闲读源码
 ---
 
-闲逛 Github 时碰见一个叫 SentinelJS 的库，声称能检测 DOM 结点的插入，顿时引起了好奇。因为以前无聊时也想过一下，没什么头绪，便不了了之。当时第一反应是该不会用轮询吧（比这粗暴的实现也不是没见过）。但看到 682 bytes (minified + gzipped) 大小时感觉一定又是用了什么奇淫怪巧，个人对这种东西很感兴趣（见另一篇[《巧妙监测元素尺寸变化》](//blog.crimx.com/2017/07/15/element-onresize/)），便顺便看了看源码，很短，但一看到 `animation` 时便拍大腿了！通过检测 animationstart 事件来检测插入，机智！
+闲逛 Github 时碰见一个叫 SentinelJS 的库，声称能检测 DOM 结点的插入，顿时引起了好奇。因为以前无聊时也想过一下，没什么头绪，便不了了之。当时第一反应是该不会用轮询吧（比这粗暴的实现也不是没见过）。但看到 682 bytes (minified + gzipped) 大小时感觉一定又是用了什么奇淫怪巧，个人对这种东西很感兴趣，便顺便看了看源码，很短，但一看到 `animation` 时便拍大腿了！通过检测 animationstart 事件来检测插入，机智！
 
 代码很短，就是维护了一个事件队列。核心在 [`onFn`](https://github.com/muicss/sentineljs/blob/master/src/sentinel.js#L37) 和 [`offFn`](https://github.com/muicss/sentineljs/blob/master/src/sentinel.js#L87) 上。后者同理，便主要看 `onFn` 的实现。
 
@@ -115,7 +116,7 @@ function animationStartHandler(ev) {
 }
 ```
 
-这个 `stopImmediatePropagation` 学到了！结合 window 上用 capture 方式监听事件，就可以保证点击植入的特定元素不会受其它事件影响。马上用在了这个 [rarbg-monitor](https://chrome.google.com/webstore/detail/rarbg-monitor/kkgcfdmlnfpdjmnheeojdlgpmhaeekga) 扩展上，在 rarbg 资源页面上放一个跳转豆瓣相应页面的按钮，优先级比它的一个全局广告要高。
+这个 `stopImmediatePropagation` 学到了！结合 window 上用 capture 方式监听事件，就可以保证点击植入的特定元素不会受其它事件影响。
 
 -EOF-
 
