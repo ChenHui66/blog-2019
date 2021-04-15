@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-09-24T02:00:00.000Z
 title: JavaScript 继承总结
 description: 总结js继承的几种形式和场合。
