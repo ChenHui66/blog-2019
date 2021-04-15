@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 draft: false
-date: 2020-07-12T01:08:57.530Z
+date: 2020-06-23T12:07:57.530Z
 title: wordpress安装主题失败
 description: >-
   Wordpress搭建博客。但是坑难免还是要踩的，下面说一下此次采坑要点。
