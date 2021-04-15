@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-10-07T08:50:00.000Z
 title: SVG Symbol 和 Sprite 的好处和坑
 description: 用 Symbol 来把 SVG 合并到一个文件几乎是现在最流行的用法
