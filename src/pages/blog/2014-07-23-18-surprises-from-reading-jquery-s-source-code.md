@@ -1,21 +1,19 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-03-06T15:00:00.000Z
 title: 阅读 jQuery 源码的18个惊喜
-tags:
-  - Translation
-  - JavaScript
-  - jQuery
+description: Jquery作为从前统治网页的框架，看看源码，对深入去学习js很有启发。
 quote:
   content: Anyone who has never made a mistake has never tried anything new.
   author: Einstein
   source: ''
-date: 2014-07-23T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Translation
+  - JavaScript
+  - jQuery
 ---
-
-原文：[18 Surprises From Reading jQuery's Source Code](http://quickleft.com/blog/18-surprises-from-reading-jquery-s-source-code)（2014-7-23）
-
-我热爱 jQuery，且尽管我认为自己算是一名高级 JavaScript 开发者，我从来没有试过由头到尾把 jQuery 的源码看一遍，直到现在。这里分享一些我一路下来学到的东西：
+这里分享一些我一路下来学到的东西：
 
 注意：我使用 `$.fn.method()` 语法来表示调用一组匹配元素的方法。比如当我说 `$.fn.addClass`，则表示 `$('div').addClass('blue')` 或者 `$('a.active').addClass('in-use')` 此类的用法。`$.fn` 是 jQuery 包装元素的原型。
 
