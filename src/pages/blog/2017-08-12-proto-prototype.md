@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2020-11-18T14:57:00.000Z
 title: prototype 与 __proto__ 的爱恨情仇
 description: 先理解两者的一个本质区别，prototype 是函数独有的，是人为设定的；__proto__ 是所有对象都有的，是继承的。
