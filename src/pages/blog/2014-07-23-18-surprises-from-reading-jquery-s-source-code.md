@@ -12,6 +12,7 @@ tags:
   - Translation
   - JavaScript
   - jQuery
+  - 阅读源码
 ---
 这里分享一些我一路下来学到的东西：
 
