@@ -1,6 +1,7 @@
 ---
 layout: blog-post
-date: 2016-05-12T12:00:00.000Z
+draft: true
+date: 2020-05-13T10:34:00.000Z
 title: JavaScript this 的六道坎
 description: 鉴于this风骚的运作方式，对this的理解是永不过时的话题，本文试图通过将其大卸六块来钉住这个磨人的妖精。
 quote:
@@ -181,7 +182,6 @@ new boss1showThis() // showThis
 
 所以对于箭头函数，只要看它在哪里创建的就行。
 
-如果对 V8 实现的词法作用域感兴趣可以看看[这里](http://blog.crimx.com/2015/03/29/javascript-hoist-under-the-hood/)。
 
 ```javascript
 function callback (cb) {
