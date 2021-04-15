@@ -1,19 +1,20 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-10-07T08:50:00.000Z
 title: SVG Symbol 和 Sprite 的好处和坑
-tags:
-  - Image
-  - SVG
-  - Sprite
-  - Recommended
+description: 用 Symbol 来把 SVG 合并到一个文件几乎是现在最流行的用法
 quote:
   content: >-
     I propose that the following character sequence for joke
     markers:<p>:-)</p>Read it sideways.
   author: Scott E. Fahlman
   source: ''
-date: 2016-11-28T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Image
+  - SVG
+  - Sprite
+  - Recommended
 ---
 
 # SVG Symbol
