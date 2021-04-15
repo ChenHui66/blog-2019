@@ -1,5 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-06-26T01:01:00.000Z
 title: 定位与拖动 iframe
+description: >-
+  用户选择一段文本之后，会在鼠标附近显示一些元素。 这个初看很简单，监听一个 mouseup 事件，获取 clientX 和 clientY
+  就行。但这个方法有个缺陷：iframe 里的鼠标事件不会传到父窗口上。解决方法也很简单，就难在把它们都联系起来。
+quote:
+  content: >-
+    Drag your thoughts away from your troubles... by the ears, by the heels, or
+    any other way you can manage it.
+  author: Mark Twain
+  source: ''
 tags:
   - Recommended
   - iframe
@@ -7,26 +19,14 @@ tags:
   - postMessage
   - Drag
   - Extension
-quote:
-  content: >-
-    Drag your thoughts away from your troubles... by the ears, by the heels, or
-    any other way you can manage it.
-  author: Mark Twain
-  source: ''
-date: 2017-04-06T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 # 定位 iframe
 
-在写一个划词翻译扩展 [Saladict](http://www.crimx.com/crx-saladict/) 时，有一个需求：用户选择一段文本之后，会在鼠标附近显示一些元素。
+用户选择一段文本之后，会在鼠标附近显示一些元素。
+这个初看很简单，监听一个 `mouseup` 事件，获取 `clientX` 和 `clientY` 就行。
 
-这个初看很简单，监听一个 `mouseup` 事件，获取 `clientX` 和 `clientY` 就行。这也是 Saladict 前几版用的方法。
-
-但这个方法有个缺陷：iframe 里的鼠标事件不会传到父窗口上。
-
-解决方法也很简单，就难在把它们都联系起来。
+但这个方法有个缺陷：iframe 里的鼠标事件不会传到父窗口上。解决方法也很简单，就难在把它们都联系起来。
 
 ## iframe 里插入脚本
 
