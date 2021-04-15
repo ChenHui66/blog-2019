@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-04-18T12:50:53.112Z
 title: 搭建 Gatsby 博客一：为什么选 Gatsby
 description: >-
