@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2020-08-18T15:57:00.000Z
 title: 检测 DOM 结点插入
 description: 代码很短，就是维护了一个事件队列。核心在 onFn 和 offFn 上。后者同理，便主要看 onFn 的实现。
