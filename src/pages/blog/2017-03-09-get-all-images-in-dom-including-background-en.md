@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 draft: true
-date: 2017-03-09T06:57:00.000Z
+date: 2020-10-14T06:57:00.000Z
 title: Get All Images in DOM (including background)
 description: >-
   To get all the images in DOM there are actually three places we are going to
