@@ -1,20 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2017-09-04T10:57:00.000Z
 title: Sublime Text 2 Emmet 快捷键整理
-tags:
-  - Sublime Text
-  - Tips
+description: 整理一些常用的快捷键，助力开发。
 quote:
   content: Short cuts make long delays.
   author: J.R.R. Tolkie
   source: ''
-date: 2014-10-18T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Sublime Text
+  - Tips
 ---
-
-
-前面总结的 Sublime Text 2 快捷键已经用上手了，最近又发现 Sublime Text 2 的 Emmet 插件不仅仅可以扩展表达式，还有许多相当 handy 的快捷键，写起 HTML 如虎添翼。
-
 
 **选择**         |
 :----------------|:-------------------------------------------------
