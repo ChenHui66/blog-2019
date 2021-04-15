@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2017-01-22T14:54:00.000Z
 title: 深入 ES2015 默认参数
 description: S2015 为函数加入了方便的默认参数语法。
