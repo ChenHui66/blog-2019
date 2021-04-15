@@ -1,17 +1,18 @@
 ---
+layout: blog-post
+draft: true
+date: 2017-11-06T07:00:00.000Z
 title: Git 分支模式笔记
-tags:
-  - Git
+description: Git 开发流程方面的资料，做一下笔记。
 quote:
   content: ''
   author: ''
   source: ''
-date: 2014-08-11T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Git
 ---
 
-正想了解 Git 开发流程方面的资料，就碰上了这篇 2010 年的[好文](http://nvie.com/posts/a-successful-git-branching-model/)。没有时间翻译，就做一下笔记。
+Git 开发流程方面的资料，做一下笔记。
 
 -------------
 
