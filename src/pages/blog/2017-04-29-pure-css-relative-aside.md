@@ -1,26 +1,22 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-06-18T14:57:00.000Z
 title: 纯 CSS 实现浮动介绍
-tags:
-  - CSS
+description: 它是使用 JavaScript 响应鼠标事件并计算高度和显示。作为 CSS 洁癖，我第一反应当然是先考虑用 CSS 实现。
 quote:
   content: “The people who drive us nuts often change us most.”
   author: Auliq Ice
   source: ''
-date: 2017-04-29T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - CSS
 ---
-
-把扩展上传到 Chrome 商店需要在开发者后台填写一系列表单，非常喜欢它对详细介绍的处理，就想着偷师一下。
-
-先上效果，下面是模仿的样子。由于详细介绍一般比设置本身要长，它使用了隐藏、按需显示的方式减少了高度。
-
 <p>
   <iframe height='522' scrolling='no' title='Pure CSS Relative Aside' src='//codepen.io/straybugs/embed/JNWMmW/?height=522&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%; height: 522px;'>See the Pen <a href='https://codepen.io/straybugs/pen/JNWMmW/'>Pure CSS Relative Aside</a> by CRIMX (<a href='http://codepen.io/straybugs'>@straybugs</a>) on <a href='http://codepen.io'>CodePen</a>.
   </iframe>
 </p>
 
-看了开发者后台的代码，它是使用 JavaScript 响应鼠标事件并计算高度和显示。作为 CSS 洁癖，我第一反应当然是先考虑用 CSS 实现。
+它是使用 JavaScript 响应鼠标事件并计算高度和显示。作为 CSS 洁癖，我第一反应当然是先考虑用 CSS 实现。
 
 这里主要的问题其实就是如何让鼠标在设置（body）上响应介绍（aside）的显示。
 
@@ -40,7 +36,7 @@ description: ''
 }
 ```
 
-全部的代码，也火速使(tou)用(shi)在了 [Saladit](http://www.crimx.com/crx-saladict/) 的设置界面：
+全部的代码：
 
 ```html
 <ul class="menu">
