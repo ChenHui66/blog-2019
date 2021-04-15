@@ -1,16 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-09-24T02:00:00.000Z
 title: JavaScript 继承总结
-tags:
-  - Understanding JavaScript
-  - JavaScript
-  - Inheritance
+description: 总结js继承的几种形式和场合。
 quote:
   content: 对 JavaScript 中各种继承方法的总结，《JavaScript高级程序设计》笔记
   author: ''
   source: ''
-date: 2014-07-27T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Understanding JavaScript
+  - JavaScript
+  - Inheritance
 ---
 
 先用一个简单的 Person 类作为文章其它例子的前提。
