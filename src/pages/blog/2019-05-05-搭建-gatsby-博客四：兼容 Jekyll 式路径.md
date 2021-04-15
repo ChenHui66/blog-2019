@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-05-05T12:00:02.769Z
 title: 搭建 Gatsby 博客四：兼容 Jekyll 式路径
 description: 前面已经让博客顺利运行起来，接下来就是实现一些个性化的功能。本文通过实现兼容 Jekyll 式路径来了解 Gatsby 的 Node APIs。
