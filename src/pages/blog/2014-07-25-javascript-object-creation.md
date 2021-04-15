@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-03-20T10:00:00.000Z
 title: JavaScript 创建对象总结
 description: >-
