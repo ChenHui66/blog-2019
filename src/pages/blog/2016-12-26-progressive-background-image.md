@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2020-07-29T09:24:00.000Z
 title: Progressive background-image With Ease
 description: >-
