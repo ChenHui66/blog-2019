@@ -1,26 +1,22 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-06-22T12:00:00.000Z
 title: 选中鼠标附近的文字
-tags:
-  - JavaScript
-  - Recommended
+description: 选中鼠标附近的文字摸索记录。
 quote:
   content: >-
     Your mind will answer most questions if you learn to relax and wait for the
     answer.
   author: William S. Burroughs
   source: ''
-date: 2018-06-22T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - JavaScript
+  - Recommended
 ---
-
-
-最近终于抽空给 Saladict 实现了鼠标悬浮取词功能，使用了较为简洁的实现方式，这里分享一下原理以及坑的处理。
-
-
 ## 初尝试
 
-这个需求其实很早就被人提 issue 了，当时做了一番搜索，最后尝试了 `document.caretPositionFromPoint` / `document.caretRangeFromPoint` ，效果不太理想。
+做了一番搜索，最后尝试了 `document.caretPositionFromPoint` / `document.caretRangeFromPoint` ，效果不太理想。
 
 如果看 mdn 给的[例子](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/caretPositionFromPoint)，就会发现，它是遍历每个元素添加事件的。这么做的原因是当使用这个方法的时候，如果鼠标指向元素空白的地方，它会就近取位置。所以例子通过给粒度更细的元素绑定来避免这个问题。然而实际上这么做还是不足够的，一个段落末行也许只有几个字符，这时空出接近一行，也会有上面的问题。
 
@@ -29,7 +25,7 @@ description: ''
 
 ## 灵感
 
-直到最近，看到一个同类的开源划词翻译扩展 [FairyDict](https://github.com/revir/FairyDict) 实现了取词功能，遍观摩了一番[源码](https://github.com/revir/FairyDict/blob/30e12d426b9eb190142003732cdfb0d2aa64eb66/content/inject.coffee#L110-L141)。
+直到最近，看到一个开源划词翻译扩展 [FairyDict](https://github.com/revir/FairyDict) 实现了取词功能，遍观摩了一番[源码](https://github.com/revir/FairyDict/blob/30e12d426b9eb190142003732cdfb0d2aa64eb66/content/inject.coffee#L110-L141)。
 
 它的原理是深度优先递归遍历这个元素以及其子元素，通过不断试探选中区域，并与鼠标座标对比来定位确切位置。
 
@@ -49,7 +45,7 @@ description: ''
 
 ## 实现
 
-按原理来实现就很简单了。[本文](https://blog.crimx.com/select-cursor-word)上按 <kbd>alt</kbd> 可体验取词效果。
+按原理来实现就很简单了。
 
 ```javascript
 /**
@@ -109,8 +105,7 @@ function selectCursorWord (e) {
 
 ## 交互
 
-最后，如果要提供功能开关或者设置不同按键的话，简单的处理可以参考 FairyDict 让事件处理空转。但对于 `mousemove` 这类比较频繁的事件，在关闭的时候取消事件监听可能更好一些。这里 Saladict 借助 RxJS 来处理复杂的逻辑，可参考[源码](https://github.com/crimx/ext-saladict/blob/ca0d8a1e58ef56277f2f0b3df4a291d4f2a0debc/src/selection/index.ts#L185-L232)。
-
+最后，如果要提供功能开关或者设置不同按键的话，简单的处理可以参考 FairyDict 让事件处理空转。但对于 `mousemove` 这类比较频繁的事件，在关闭的时候取消事件监听可能更好一些。
 <script type="text/javascript">
   document.addEventListener('mousemove', e => {
     if (e.altKey) {
