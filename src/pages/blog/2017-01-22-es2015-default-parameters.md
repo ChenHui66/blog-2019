@@ -1,12 +1,9 @@
 ---
+layout: blog-post
+draft: true
+date: 2017-01-22T14:54:00.000Z
 title: 深入 ES2015 默认参数
-tags:
-  - TDZ
-  - Understanding JavaScript
-  - Function
-  - Parameters
-  - Arguments
-  - Recommended
+description: S2015 为函数加入了方便的默认参数语法。
 quote:
   content: >-
     Life can be much broader once you discover one simple fact: Everything
@@ -14,9 +11,13 @@ quote:
     than you.
   author: Steve Jobs
   source: ''
-date: 2017-01-22T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - TDZ
+  - Understanding JavaScript
+  - Function
+  - Parameters
+  - Arguments
+  - Recommended
 ---
 
 ES2015 为函数加入了方便的默认参数语法。
@@ -44,7 +45,7 @@ foo() // ReferenceError: x is not defined
 
 这个是最早见的坑，已经有不少文章指出了是个 TDZ (Temporal Dead Zone) 的问题。我找了大量资料，大部分文章基本是参考自[这篇](http://dmitrysoshnikov.com/ecmascript/es6-notes-default-values-of-parameters/comment-page-1/#tdz-temporal-dead-zone-for-parameters)，它指出了 TDZ 但没有说明为什么。唯有[这篇文章](http://code.wileam.com/default-value-n-params-env/)引用了规范，但论据和结论牛头对了马嘴。
 
-本着强迫症的精神，亲自去啃了一遍规范，现在把思路整理出来。其它关于 JavaScript 的文章可以看这里<https://blog.crimx.com/tags/Understanding-JavaScript/>。
+本着强迫症的精神，亲自去啃了一遍规范，现在把思路整理出来。
 
 ### TDZ 基本
 
