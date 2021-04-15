@@ -1,5 +1,13 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-11-21T23:57:00.000Z
 title: Manacher 马拉车算法
+description: 马拉车算法可以在线性时间复杂度内求出一个字符串的最长回文字串。其核心思想跟 KMP 相似，即反复利用已掌握的情况。
+quote:
+  content: 'A Man, A Plan, A Canal-Panama!'
+  author: Leigh Mercer
+  source: ''
 tags:
   - Manacher
   - 算法
@@ -9,13 +17,6 @@ tags:
   - 字符串
   - String
   - Recommended
-quote:
-  content: 'A Man, A Plan, A Canal-Panama!'
-  author: Leigh Mercer
-  source: ''
-date: 2017-07-06T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 马拉车算法可以在线性时间复杂度内求出一个字符串的最长回文字串。其核心思想跟 KMP 相似，即反复利用已掌握的情况。
