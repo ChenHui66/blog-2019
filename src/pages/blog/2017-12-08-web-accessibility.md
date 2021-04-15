@@ -1,16 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-11-20T11:59:00.000Z
 title: Web 可访问性整理
-tags:
-  - 可访问性
-  - Accessibility
-  - 语义化
+description: web可访问性整理。
 quote:
   content: Being unconscious is the ultimate disability.
   author: Jessa Gamble
   source: ''
-date: 2017-12-08T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - 可访问性
+  - Accessibility
+  - 语义化
 ---
 
 ## 定义
@@ -38,7 +39,7 @@ description: ''
 
 - 校验
   - Chrome 自带 Audits
-  - [aXe](https://www.axe-core.org/) 扩展、命令行工具等。
+  - [aXe](https://www.deque.com/axe/) 扩展、命令行工具等。
   - webaim.org
 - 调试
   - Chrome 自带实验性 Accessibility Inspector `chrome://flags/#enable-devtools-experiments`
@@ -67,7 +68,6 @@ description: ''
 - [Accessibility - W3C](https://www.w3.org/standards/webdesign/accessibility)
 - [Web Fundamentals - Accessibility](https://developers.google.com/web/fundamentals/accessibility/)
 - [Common idioms without dedicated elements](https://www.w3.org/TR/html5/common-idioms-without-dedicated-elements.html#common-idioms-without-dedicated-elements)
-- 本文原文 [Web 可访问性整理](https://blog.crimx.com/2017/12/08/web-accessibility/)
 
 ### 视频
 
