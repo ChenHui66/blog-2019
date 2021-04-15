@@ -1,5 +1,6 @@
 ---
 layout: blog-post
+draft: true
 date: 2019-04-18T12:50:53.112Z
 title: 搭建 Gatsby 博客一：为什么选 Gatsby
 description: >-
@@ -18,7 +19,7 @@ tags:
 
 我的博客最初是用 Github Pages 默认的 [Jekyll](https://jekyllrb.com) 框架，其使用的 [Liquid](https://shopify.github.io/liquid/) 模板引擎在使用上有诸多不便。
 
-后来基于 Node.js 的 [Hexo](https://hexo.io) 横空出世，我便重构了[博客](https://blog2018.crimx.com)对其深入整合，还为其写了一个 [emoji 插件](https://github.com/crimx/hexo-filter-github-emojis)。在编写过程中发现其 API 设计比较不成熟，调试体验也不是很好，阅读其它插件代码时发现很多都需要用到未公开接口。同时资源管理需要借助其它 Task runner，如当时比较流行的 Grunt 和 Gulp 。这样下来直接依赖了大量包，冲突不可避免的产生。
+后来基于 Node.js 的 [Hexo](https://hexo.io) 横空出世，我便重构了[博客](https://blog2018.crimx.com)对其深入整合。在编写过程中发现其 API 设计比较不成熟，调试体验也不是很好，阅读其它插件代码时发现很多都需要用到未公开接口。同时资源管理需要借助其它 Task runner，如当时比较流行的 Grunt 和 Gulp 。这样下来直接依赖了大量包，冲突不可避免的产生。
 
 在一次换系统之后，项目终于构建不了了，包冲突处理起来非常头疼，也影响到了写博文的兴致。
 
