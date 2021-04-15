@@ -1,16 +1,19 @@
 ---
+layout: blog-post
+draft: false
+date: 2018-02-16T12:00:00.000Z
 title: 理解 RxJS ：四次元编程
-tags:
-  - RxJS
-  - JavaScript
-  - Functional
+description: >-
+  RxJS
+  属于响应式编程，其思想是将时间看作数组，随着时间发生的事件被看作是数组的项，然后以操作数组的方式变换事件。其强大的地方在于站在四维的角度看问题，这就像是拥有了上帝视野。
 quote:
   content: We are ready for any unforeseen event that may or may not occur.
   author: Dan Quayle
   source: ''
-date: 2018-02-16T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - RxJS
+  - JavaScript
+  - Functional
 ---
 
 学习 RxJS 最大的问题是官方造了很多概念，但文档又解释得不太全面和易懂，需要结合阅读各种文章（特别是 [Ben Lesh](https://medium.com/@benlesh) 的，包括视频）。本文试图整体梳理一遍再用另外的角度来介绍，希望能帮助初学者或者对 RxJS 的一些概念比较含糊的使用者。
@@ -107,6 +110,4 @@ Observable 冷热概念其实就是看 Producer 的创建受不受 RxJS 控制�
 多翻[官方文档](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html)，常用的 Operators 都描述得非常详细，有弹珠图（Marble Graph）和一句话总结；缺点是措辞有时可能会比较抽象，不是那么好理解。
 
 另外就是第三方的 [learnrxjs](http://learnrxjs.io/operators) 和 [Rxjs 5 ultimate](https://chrisnoring.gitbooks.io/rxjs-5-ultimate/content/operators.html)，按作者的思路组织，更通俗易懂些，可以作为补充理解；缺点是可能跟官方不同步，以及不全。
-
-我整理完也会再写一篇文章介绍，敬请期待。
 
