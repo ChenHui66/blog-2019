@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2019-06-18T17:19:22.232Z
 title: 搭建 Karma+Mocha+Chai 测试 TypeScript 项目
 description: >-
