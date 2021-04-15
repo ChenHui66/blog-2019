@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2018-08-15T11:00:00.000Z
 title: 如何正确学习 JavaScript
 description: 总结如何学习JavaScript，一些建议和学习资源，进阶路线。
