@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2017-10-31T16:28:00.000Z
 title: Sublime Text 2 快捷键整理
 description: 基本涵盖绝大部分情况了，鼠标跳跃多选可以利用标签代替，或者用回鼠标（毕竟一般使用频率不高）。
