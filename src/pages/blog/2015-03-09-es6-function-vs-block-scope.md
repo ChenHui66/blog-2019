@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 draft: false
-date: 2015-03-09T12:00:00.000Z
+date: 2019-08-21T12:51:00.000Z
 title: ES6 随笔：函数与块级作用域
 description: '阅读 Kyle Simpson 《You don''t JS: Scope and Closures》第三章过程中的一些随笔'
 quote:
@@ -18,7 +18,7 @@ tags:
 作用域
 ------
 
-作者提到了 ES5 中有三种方式实现作用域：function、with 和鲜为人知的 try/catch 。with 已经被淘汰，function 方式可以看看之前翻译的经典文章[《深入理解 JavaScript 模块模式 》](http://www.crimx.com/2014/08/05/javascript-module-pattern-in-depth/)，而最后一种 hack 真是让人眼前一亮。他在附录 B 中也提到 google 的 Traceur 也是这么实现的，我试了一下，发现 Traceur 与 Babel 现在都没有采用这种方式了，而是直接检测 shadow 冲突再使用不同的变量名，这可能是考虑到性能的问题。
+作者提到了 ES5 中有三种方式实现作用域：function、with 和鲜为人知的 try/catch 。with 已经被淘汰，而hack 真是让人眼前一亮。他在附录 B 中也提到 google 的 Traceur 也是这么实现的，我试了一下，发现 Traceur 与 Babel 现在都没有采用这种方式了，而是直接检测 shadow 冲突再使用不同的变量名，这可能是考虑到性能的问题。
 
 ```javascript
 // ES6 代码
