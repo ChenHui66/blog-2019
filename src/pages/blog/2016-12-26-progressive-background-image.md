@@ -1,18 +1,22 @@
 ---
+layout: blog-post
+draft: true
+date: 2020-07-29T09:24:00.000Z
 title: Progressive background-image With Ease
+description: >-
+  Everyone likes smooth loading. Lately I tried to make the background-image of
+  the menu to load progressively(also to the cover if you view the blog on
+  mobile).
+quote:
+  content: ''
+  author: ''
+  source: ''
 tags:
   - CSS
   - Image
   - Progressive Image
   - GraphicsMagick
   - Recommended
-quote:
-  content: ''
-  author: ''
-  source: ''
-date: 2016-12-26T12:00:00.000Z
-layout: blog-post
-description: ''
 ---
 
 Everyone likes smooth loading. Lately I tried to make the `background-image` of the menu to load progressively(also to the cover if you view the blog on mobile).
@@ -113,6 +117,4 @@ html.no-js .thumbnail {
   display: none !important;
 }
 ```
-
-For my blog I also made a [Sass Mixin/Extend](https://github.com/crimx/blog/blob/master/themes/crimx/source/_scss/libs/_progressive-background-image.scss) with this method.
 
