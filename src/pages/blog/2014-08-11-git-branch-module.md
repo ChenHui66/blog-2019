@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2017-11-06T07:00:00.000Z
 title: Git 分支模式笔记
 description: Git 开发流程方面的资料，做一下笔记。
