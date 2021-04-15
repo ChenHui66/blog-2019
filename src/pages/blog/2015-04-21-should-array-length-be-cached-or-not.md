@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-draft: true
+draft: false
 date: 2020-03-18T10:43:00.000Z
 title: JavaScript 有必要缓存 for 循环中的 Array.length 吗？
 description: 先上笔者得到的结论：缓存 Array.lengh 对优化影响不大，甚至会减慢。
