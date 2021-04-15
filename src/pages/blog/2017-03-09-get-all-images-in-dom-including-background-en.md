@@ -1,19 +1,23 @@
 ---
+layout: blog-post
+draft: true
+date: 2017-03-09T06:57:00.000Z
 title: Get All Images in DOM (including background)
-tags:
-  - Recommended
-  - Image
-  - JavaScript
-  - DOM
+description: >-
+  To get all the images in DOM there are actually three places we are going to
+  look at: <img> element, background-image CSS property and, <iframe>. Yes,
+  every iframe hides a magical kingdom.
 quote:
   content: >-
     “If I could store lightnings in jars, I'd sell them to sick fireflies to
     light their way. Only they have nothing to pay for it with but life.” 
   author: 'Will Advise, Nothing is here...'
   source: ''
-date: 2017-03-09T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Recommended
+  - Image
+  - JavaScript
+  - DOM
 ---
 
 Quite useful if you are writing an browser extension or something.
@@ -141,7 +145,7 @@ searchIframes(document)
 
 # Together
 
-Can be used out of the box. It was made when I was writing a [Chrome Extension](https://github.com/crimx/crx-weitweet).
+Can be used out of the box. 
 
 ```javascript
 function getImgAll (doc) {
