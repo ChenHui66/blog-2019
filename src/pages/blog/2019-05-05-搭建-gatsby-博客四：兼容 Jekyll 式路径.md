@@ -1,12 +1,14 @@
 ---
 layout: blog-post
-draft: false
+draft: true
 date: 2019-05-05T12:00:02.769Z
 title: 搭建 Gatsby 博客四：兼容 Jekyll 式路径
 description: 前面已经让博客顺利运行起来，接下来就是实现一些个性化的功能。本文通过实现兼容 Jekyll 式路径来了解 Gatsby 的 Node APIs。
 quote:
   author: Ralph Waldo Emerson
-  content: '"Do not go where the path may lead, go instead where there is no path and leave a trail." '
+  content: >-
+    "Do not go where the path may lead, go instead where there is no path and
+    leave a trail." 
   source: ''
 tags:
   - Gatsby
@@ -101,7 +103,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 ## 创建页面
 
-回到我们[前面的查询](https://github.com/crimx/blog-2019/blob/d7c8c6bbbe73ef455f70bc629d153b836482f788/gatsby-node.js#L71-L79)，得到需要的数据之后只需要对每个页面调用 `actions.createPage` 即可。
+得到需要的数据之后只需要对每个页面调用 `actions.createPage` 即可。
 
 ```javascript
 exports.createPages = ({ actions, graphql }) => {
