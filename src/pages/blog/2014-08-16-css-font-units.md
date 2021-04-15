@@ -1,16 +1,17 @@
 ---
+layout: blog-post
+draft: true
+date: 2018-09-12T10:48:00.000Z
 title: CSS Font 单位
-tags:
-  - CSS
-  - Font
-  - 闲读规范
+description: 了解 CSS font 各个单位的意义，搜了一些资料。
 quote:
   content: ''
   author: ''
   source: ''
-date: 2014-08-16T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - CSS
+  - Font
+  - 闲读规范
 ---
 
 了解 CSS font 各个单位的意义，搜了一些资料。
