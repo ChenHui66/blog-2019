@@ -1,16 +1,19 @@
 ---
+layout: blog-post
+draft: true
+date: 2019-03-20T10:00:00.000Z
 title: JavaScript 创建对象总结
-tags:
-  - Understanding JavaScript
-  - JavaScript
-  - Object
+description: >-
+  JavaScript
+  是一门灵活的语言，就创建对象而言就有各种各样的方法。本文是《JavaScript高级程序设计》（第3版）的笔记，主要是针对各种创建对象方法之间的关系、优缺点进行梳理。每种方法相关的其它细节不是本文重点，我会标记页码。
 quote:
   content: 对 JavaScript 中各种创建对象方法的总结
   author: ''
   source: ''
-date: 2014-07-25T12:00:00.000Z
-layout: blog-post
-description: ''
+tags:
+  - Understanding JavaScript
+  - JavaScript
+  - Object
 ---
 
 JavaScript 是一门灵活的语言，就创建对象而言就有各种各样的方法。本文是《JavaScript高级程序设计》（第3版）的笔记，主要是针对各种创建对象方法之间的关系、优缺点进行梳理。每种方法相关的其它细节不是本文重点，我会标记页码。
