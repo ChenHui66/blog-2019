@@ -22,7 +22,7 @@ tags:
 
 然后就是轮询，反复查询值变化了没有。开销不是一般的大。
 
-最后便是[这个](https://github.com/marcj/css-element-queries)，号称 event based 无性能问题，便去观摩了一番源码。而是着重原理，对应[这部分](https://github.com/marcj/css-element-queries/blob/master/src/ResizeSensor.js#L100)的源码。
+最后便是[这个](https://github.com/marcj/css-element-queries)，号称 event based 无性能问题，便去观摩了一番源码。这里着重原理，对应[这部分](https://github.com/marcj/css-element-queries/blob/master/src/ResizeSensor.js#L100)的源码。
 
 ## 整体思路
 
