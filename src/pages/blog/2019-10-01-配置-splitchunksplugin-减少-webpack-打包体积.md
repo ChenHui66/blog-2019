@@ -58,7 +58,7 @@ module.exports = {
 
 ![webpack-bundle-analyzer](https://cloud.githubusercontent.com/assets/302213/20628702/93f72404-b338-11e6-92d4-9a365550a701.gif)
 
-## 沙拉查词的优化
+## 项目优化实例
 
 这是一个项目优化前的样子，使用了默认的 `optimization` 配置，打包后 `5.63MB`（包含一个 PDF 浏览器）。
 
@@ -130,5 +130,3 @@ neutrino.config
 ## 最后
 
 当然 SplitChunksPlugin 能做的远不止这些，遇到问题可以多翻[文档](https://webpack.js.org/plugins/split-chunks-plugin/)找灵感。
-
-祝大家国庆节快乐！
