@@ -82,8 +82,8 @@ const Footer = React.memo(() => {
         I{' '}
         <a
           className='has-text-info'
-          href={social.github.url}
-          target='_blank'
+          href='javascript:void(0);'
+          target=''
           rel='nofollow noreferrer noopener'
         >
           code
@@ -91,8 +91,8 @@ const Footer = React.memo(() => {
         ,{' '}
         <a
           className='has-text-info'
-          href={social.codepen.url}
-          target='_blank'
+          href='javascript:void(0);'
+          target=''
           rel='nofollow noreferrer noopener'
         >
           doodle
@@ -100,8 +100,8 @@ const Footer = React.memo(() => {
         ,{' '}
         <a
           className='has-text-info'
-          href={social.twitter.url}
-          target='_blank'
+          href='javascript:void(0);'
+          target=''
           rel='nofollow noreferrer noopener'
         >
           tweet
