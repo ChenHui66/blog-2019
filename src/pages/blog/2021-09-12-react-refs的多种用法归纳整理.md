@@ -147,6 +147,7 @@ const ref = React.createRef();
 ```
 2. 在高阶组件中转发 refs
 这个技巧对高阶组件（也被称为 HOC）特别有用。让我们从一个输出组件 props 到控制台的 HOC 示例开始：
+
 ```JavaScript
 function logProps(WrappedComponent) {
   class LogProps extends React.Component {
@@ -163,6 +164,7 @@ function logProps(WrappedComponent) {
   return LogProps;
 }
 ```
+
 “logProps” HOC 透传（pass through）所有 props 到其包裹的组件，所以渲染结果将是相同的。例如：我们可以使用该 HOC 记录所有传递到 “fancy button” 组件的 props：
 
 ```JavaScript
