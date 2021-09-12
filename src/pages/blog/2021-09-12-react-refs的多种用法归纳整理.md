@@ -30,6 +30,7 @@ tags:
 ### 不跨越层级的用法
 #### React.createRef()和ref属性的配合使用
 - 创建 Refs
+
 ```JavaScript
 class MyComponent extends React.Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class MyComponent extends React.Component {
 }
 ```
 - 访问 Refs
+
 ```JavaScript
 const node = this.myRef.current;
 ```
@@ -131,6 +133,7 @@ Ref 转发是一项将 ref 自动地通过组件传递到其一子组件的技�
 
 1. 普通场景使用转发refs
 > 在下面的示例中，FancyButton 使用 React.forwardRef 来获取传递给它的 ref，然后转发到它渲染的 DOM button：
+
 ```JavaScript
 const FancyButton = React.forwardRef((props, ref) => (
   <button ref={ref} className="FancyButton">
@@ -161,6 +164,7 @@ function logProps(WrappedComponent) {
 }
 ```
 “logProps” HOC 透传（pass through）所有 props 到其包裹的组件，所以渲染结果将是相同的。例如：我们可以使用该 HOC 记录所有传递到 “fancy button” 组件的 props：
+
 ```JavaScript
 class FancyButton extends React.Component {
   focus() {
