@@ -49,6 +49,7 @@ const node = this.myRef.current;
   - 当 ref 属性用于 HTML 元素时，构造函数中使用 React.createRef() 创建的 ref 接收底层 DOM 元素作为其 current 属性。
   - 当 ref 属性用于自定义 class 组件时，ref 对象接收组件的挂载实例作为其 current 属性。
   - **你不能在函数组件上使用 ref 属性**，因为他们没有实例。
+
 #### 回调 Refs
 React 也支持另一种设置 refs 的方式，称为“回调 refs”。它能助你更精细地控制何时 refs 被设置和解除。
 
@@ -122,7 +123,9 @@ class Parent extends React.Component {
 ```
 
 ### 跨越层级的用法
+
 #### 通过forwardRef 和 createRef的配合使用
+
 Ref 转发是一项将 ref 自动地通过组件传递到其一子组件的技巧。对于大多数应用中的组件来说，这通常不是必需的。但其对某些组件，尤其是可重用的组件库是很有用的。
 > Ref 转发是一个可选特性，其允许某些组件接收 ref，并将其向下传递（换句话说，“转发”它）给子组件。
 
@@ -216,6 +219,7 @@ function logProps(Component) {
   });
 }
 ```
+
 #### 将ref的值作为组件的属性往下传递到目标节点或者实例。
 
 1. 传递createRef
